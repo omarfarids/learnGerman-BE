@@ -183,4 +183,26 @@ export const lessons = [
       
     },
   },
+  {
+    id: 7,
+    video: {
+      link: "https://www.youtube.com/embed/T89sIATrpBc",
+      description:
+        "Lisa phones her father who is in the police force. He says she is to bring Nico to the police station. Maybe her father can help Nico.",
+      learnPoints: [
+        "How to introduce other people",
+      ],
+    },
+    vocabs: [
+      "Der Freund (Friend)",
+      "Die Arbeit (Job)",
+      "Die Familie (Family)",
+      "Das Auto (Car)",
+      "V.Haben (Have)",
+      "Richtig (right)",
+      ],
+    additional: {
+      
+    },
+  },
 ];
