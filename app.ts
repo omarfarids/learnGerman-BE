@@ -12,25 +12,25 @@ const port = 8080;
 
 
 // app config 
-var allowCrossDomain = function( req:Request, res:Response, next:NextFunction) {
-  res.header('Access-Control-Allow-Origin', 'example.com');
-  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-  res.header('Access-Control-Allow-Headers', 'Content-Type');
+// var allowCrossDomain = function( req:Request, res:Response, next:NextFunction) {
+//   res.header('Access-Control-Allow-Origin', 'example.com');
+//   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+//   res.header('Access-Control-Allow-Headers', 'Content-Type');
   
-  next();
-}
+//   next();
+// }
 
-app.all('/*', function(req:Request, res:Response, next:NextFunction) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Authorization");
-  next();
-});
+// app.all('/*', function(req:Request, res:Response, next:NextFunction) {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Headers", "Authorization");
+//   next();
+// });
 
-app.all('/signup', function(req:Request, res:Response, next:NextFunction) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Content-Type");
-  next();
-});
+// app.all('/signup', function(req:Request, res:Response, next:NextFunction) {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Headers", "Content-Type");
+//   next();
+// });
 
 
 app.use(cors());
