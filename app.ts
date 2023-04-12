@@ -5,34 +5,13 @@ import { singleListen } from './services/singleListen.service';
 import { LESSONS , LOGIN, SENGLELESSON, SIGNUP } from './utils/routes'
 import { auth } from './middlewares/auth'
 import { login, signup } from './services/auth.service';
-import cors from 'cors';
+import cors from 'cors'
 
 const app = express();
 const port = 8080;
 
 
 // app config 
-// var allowCrossDomain = function( req:Request, res:Response, next:NextFunction) {
-//   res.header('Access-Control-Allow-Origin', 'example.com');
-//   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-//   res.header('Access-Control-Allow-Headers', 'Content-Type');
-  
-//   next();
-// }
-
-// app.all('/*', function(req:Request, res:Response, next:NextFunction) {
-//   res.header("Access-Control-Allow-Origin", "*");
-//   res.header("Access-Control-Allow-Headers", "Authorization");
-//   next();
-// });
-
-// app.all('/signup', function(req:Request, res:Response, next:NextFunction) {
-//   res.header("Access-Control-Allow-Origin", "*");
-//   res.header("Access-Control-Allow-Headers", "Content-Type");
-//   next();
-// });
-
-
 app.use(cors());
 
 app.use(express.json())
