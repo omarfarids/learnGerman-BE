@@ -205,4 +205,27 @@ export const lessons = [
       
     },
   },
+  {
+    id: 8,
+    video: {
+      link: "https://www.youtube.com/embed/p1dci7nBJRo",
+      description:
+        "Before going to the police station, Lisa and Nico take Emma to a children’s birthday party. On the way there, Nico draws Emma a picture with numbers, and Emma teaches Nico how to count to 12 in German.",
+      learnPoints: [
+        "How to count to 100",
+        "How to use numbers in different contexts",
+      ],
+    },
+    vocabs: [
+      "Bis morgen! (See you tomorrow)",
+      "Er is acht jahre alt (He is 8 years old)",
+      "Der Geburtstag (Birthday)",
+      "Das Geschenk (Gift)",
+      "Wie viele ... ? (How old)",
+      "Wie alt ... ? (How old)",
+      ],
+    additional: {
+      img:'https://i.pinimg.com/originals/8f/e9/bd/8fe9bdf22619dd3bd1c6847c326b108c.jpg'
+    },
+  },
 ];
